@@ -61,7 +61,9 @@ metalsmith.use(validate([
 		// pattern defaults to '**/*'
 		metadata: {
 			template: {
-				default: 'default.jade'
+				default: function (file, data) {
+					return file + '.jade';
+				},
 				pattern: function (value) {
 					return value.match(/\.jade$/);
 				}
@@ -70,6 +72,8 @@ metalsmith.use(validate([
 	}
 ));
 ```
+
+Notice, both `default` and `pattern` accept callbacks.
 
 ## CLI Usage
 

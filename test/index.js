@@ -43,6 +43,30 @@ describe('metalsmith-validate', function () {
 			});
 	});
 
+	it('should apply value returned by default callback if key unspecified', function (done) {
+		Metalsmith('test/fixtures/default-cb')
+			.use(validate([
+				{
+					metadata: {
+						default: {
+							default: function (file, data) {
+								return 'unspecified';
+							}
+						}
+					}
+				}
+			]))
+			.build(function (err, files) {
+				if (err) {
+					return done(err);
+				}
+
+				assert.equal(files['one.md'].default, 'specified');
+				assert.equal(files['two.md'].default, 'unspecified');
+				done();
+			});
+	});
+
 	it('should fail if exists = true and key unspecified', function (done) {
 		Metalsmith('test/fixtures/exists')
 			.use(validate([

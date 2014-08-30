@@ -1,3 +1,7 @@
+0.1.2 - August 30, 2014
+-----------------------
+* allow default value to take callback function(file, data) returning default value
+
 0.1.1 - August 30, 2014
 -----------------------
 * only test type against meta keys that exist
