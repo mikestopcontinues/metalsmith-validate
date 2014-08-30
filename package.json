@@ -1,0 +1,18 @@
+{
+  "name": "metalsmith-validate",
+  "description": "A Metalsmith plugin that allows you to easily validate file metadata, checking existence, type, and regex pattern.",
+  "repository": "git://github.com/mikestopcontinues/metalsmith-validate.git",
+  "version": "0.1.0",
+  "author": "Mike Stop Continues <mikestopcontinues@gmail.com>",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "dependencies": {
+    "debug": "~0.7.4",
+    "minimatch": "^0.3.0",
+    "type-check": "^0.3.1"
+  },
+  "devDependencies": {
+    "metalsmith": "0.x",
+    "mocha": "1.x"
+  }
+}
