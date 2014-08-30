@@ -1,3 +1,7 @@
+0.1.3 - August 30, 2014
+-----------------------
+* fixed pattern callback bug
+
 0.1.2 - August 30, 2014
 -----------------------
 * allow default value to take callback function(file, data) returning default value
