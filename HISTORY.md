@@ -1,3 +1,7 @@
+0.1.1 - August 30, 2014
+-----------------------
+* only test type against meta keys that exist
+
 0.1.0 - August 30, 2014
 -----------------------
 * works on files matching pattern
