@@ -73,7 +73,7 @@ metalsmith.use(validate([
 ));
 ```
 
-Notice, both `default` and `pattern` accept callbacks.
+Notice, both `default` and `pattern` accept callbacks. Also note the file-matching pattern is specified as a path after the metalsmith .source path (e.g. 'post/*' and not 'src/post/*'). 
 
 ## CLI Usage
 
