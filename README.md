@@ -7,7 +7,7 @@ A [Metalsmith](https://github.com/segmentio/metalsmith) plugin that allows you t
   - works on files matching pattern
   - can specify default for when key unspecified
   - can test for existence or for lack thereof
-  - can validate against type or array of types using [check-types](https://github.com/philbooth/check-types.js)
+  - can validate against type or array of types using [type-check](https://github.com/gkz/type-check)
   - can match against pattern as RegExp, string, or callback(value) returning boolean
 
 ## Installation
